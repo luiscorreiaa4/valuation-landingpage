@@ -1,0 +1,36 @@
+Lista de Perguntas para o Cliente
+
+Identidade e Negócio
+1. Qual é o nome oficial da empresa? (Tem razão social e CNPJ para colocar no rodapé?)
+2. Qual é a região de atendimento? O atendimento é presencial, 100% online ou ambos?
+3. Há quantos anos o escritório de contabilidade existe?
+
+Conversão e Atendimento
+4. Qual é o principal objetivo do site: que o cliente chame no WhatsApp, preencha um formulário de orçamento ou agende uma reunião?
+5. Qual é o número do WhatsApp e qual deve ser a mensagem automática quando o cliente clicar?
+6. Qual é o horário de atendimento e em quanto tempo costumam responder?
+7. Existe alguma oferta especial de entrada? (Ex: diagnóstico fiscal gratuito, primeira consulta grátis).
+
+Público e Serviços
+8. Quem é o público principal de vocês? (Ex: MEI, profissionais da saúde, e-commerce, autônomos).
+9. Quais são os 3 a 6 principais serviços prestados que devem ter destaque?
+10. O nome "Valuation" significa que vocês fazem avaliação de empresas? Esse serviço deve ganhar destaque?
+11. Vocês querem mostrar preços/faixas de preço no site ou será sempre "sob consulta"?
+12. Existe algum nicho de mercado que vocês não atendem?
+
+Diferenciais e Prova Social
+13. O que faz um cliente escolher o escritório de vocês e não a concorrência?
+14. Vocês têm números para exibir no site? (Ex: número de clientes ativos, economia gerada, anos de experiência).
+15. Usam algum portal/app que o cliente acessa (como Conta Azul ou Omie) que valha a pena citar?
+
+Sobre a Equipe e Contato
+16. Quem são os contadores responsáveis? (Precisamos dos nomes, número do CRC com a UF e breve resumo da formação/especialização).
+17. Vocês possuem fotos profissionais da equipe para colocar no site?
+19. Quais são as 5 a 8 dúvidas mais frequentes que vocês ouvem dos clientes?
+20. Quais são o e-mail, telefone, redes sociais e endereço completo de vocês?
+
+Visual e SEO
+21. Como os clientes procurariam por vocês no Google? (Ex: "contador para MEI em Maceió").
+22. Que tom de voz preferem no texto: mais formal ou mais descontraído?
+23. Têm sites de outras empresas que vocês admiram ou que querem evitar como referência?
+24. Preferem um visual mais claro, mais escuro, ou dois modos?
