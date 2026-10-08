@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     initModal();
     initFAQ();
+    initReveal();
 });
 
 // Theme Management
@@ -123,4 +124,25 @@ function initFAQ() {
             });
         });
     });
+}
+
+// Reveal on scroll
+function initReveal() {
+    const items = document.querySelectorAll('.reveal');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (!items.length || reduceMotion || !('IntersectionObserver' in window)) return;
+
+    document.documentElement.classList.add('js-reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    items.forEach(item => observer.observe(item));
 }
