@@ -7,15 +7,15 @@
     --secondary-color: #00c3ff;
     /* Highlight Blue */
     --secondary-dark: #00a2d9;
-    --bg-main: #FFFFFF;
-    --bg-alt: #ededed;
-    --bg-card: #FFFFFF;
-    --text-main: #001f5f;
-    --text-muted: #363636;
-    --border-color: rgba(0, 31, 95, 0.1);
+    --bg-main: #f7f3eb; /* parchment */
+    --bg-alt: #fafafa; /* ledger white */
+    --bg-card: #fafafa;
+    --text-main: #1c1a17; /* coal ink */
+    --text-muted: #5a5957; /* graphite */
+    --border-color: rgba(28, 26, 23, 0.1);
     /* Subtle translucid border */
-    --header-bg: rgba(255, 255, 255, 0.92);
-    --menu-bg: rgba(255, 255, 255, 0.96);
+    --header-bg: rgba(247, 243, 235, 0.92);
+    --menu-bg: rgba(250, 250, 250, 0.96);
     --menu-shadow: 0 20px 40px -10px rgba(0, 31, 95, 0.15);
 
     /* Typography */
@@ -23,11 +23,11 @@
     --nav-height: 100px;
 
     /* Layout & Shapes */
-    --radius-full: 9999px;
+    --radius-full: 48px;
     /* For pills/buttons */
-    --radius-xl: 1.5rem;
+    --radius-xl: 12px;
     /* For cards / 24px */
-    --radius-2xl: 2rem;
+    --radius-2xl: 20px;
     /* For larger elements */
 
     /* Depth */
@@ -45,16 +45,14 @@
     --primary-dark: #00a2d9;
     --secondary-color: #00c3ff;
     --secondary-dark: #00a2d9;
-    --bg-main: #001f5f;
-    --bg-alt: #001646;
-    --bg-card: #001b52;
-    /* Slightly distinguished from bg-main/alt */
+    --bg-main: #001122;
+    --bg-alt: #001633;
+    --bg-card: #001b40;
     --text-main: #ededed;
-    --text-muted: #c2c2c2;
-    --border-color: rgba(237, 237, 237, 0.1);
-    /* Subtle light border */
-    --header-bg: rgba(0, 31, 95, 0.92);
-    --menu-bg: rgba(0, 22, 68, 0.97);
+    --text-muted: #bab9b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --header-bg: rgba(0, 17, 34, 0.92);
+    --menu-bg: rgba(0, 22, 51, 0.97);
     --menu-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
 
     --shadow-soft: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
@@ -124,21 +122,24 @@ h4 {
 
 h1 {
     font-size: clamp(3rem, 6vw, 4.5rem);
-    font-weight: 800;
-    letter-spacing: -0.03em;
+    font-weight: 700;
+    letter-spacing: -2.24px;
     margin-bottom: 1.5rem;
+    line-height: 1;
 }
 
 h2 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
+    font-weight: 700;
+    letter-spacing: -1.44px;
     margin-bottom: 1.5rem;
+    line-height: 1.13;
 }
 
 h3 {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1.25rem;
+    letter-spacing: -0.24px;
 }
 
 h1 i,
@@ -151,16 +152,17 @@ h3 i {
 
 p {
     color: var(--text-muted);
-    font-size: 1.125rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .eyebrow {
     display: inline-block;
-    font-size: 0.875rem;
+    font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-weight: 700;
-    color: var(--secondary-color);
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    color: var(--text-muted);
     margin-bottom: 1.25rem;
 }
 
@@ -194,19 +196,18 @@ a {
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    padding: 0.875rem 2rem;
-    border-radius: 8px;
-    /* Pill shape */
+    padding: 0.75rem 1.5rem;
+    border-radius: 48px;
     font-weight: 600;
+    font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
     border: none;
 }
 
 .btn-primary {
-    background-color: var(--secondary-color);
-    color: #001f5f !important;
-    /* Ensure high contrast */
+    background-color: var(--primary-color);
+    color: #ffffff !important;
 }
 
 [data-theme="light"] .btn-primary {
@@ -214,25 +215,28 @@ a {
 }
 
 .btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 195, 255, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 31, 95, 0.2);
     filter: brightness(1.1);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--text-main);
-    border: 1px solid var(--border-color);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+}
+
+[data-theme="dark"] .btn-secondary {
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .btn-secondary:hover {
-    border-color: var(--primary-color);
-    color: var(--primary-color);
-    background-color: var(--bg-card);
+    background-color: var(--bg-alt);
 }
 
 .btn-large {
-    padding: 1.25rem 2.5rem;
+    padding: 1rem 2rem;
     font-size: 1.125rem;
 }
 
@@ -365,18 +369,24 @@ section {
 /* Flat Cards with Borders */
 .card {
     background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius-xl);
-    /* Highly rounded */
-    padding: 2.5rem;
-    box-shadow: none;
-    /* Flat design */
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: none;
+    box-shadow: rgba(95, 99, 106, 0.08) 0px 0px 0px 1px, rgba(43, 43, 48, 0.1) 0px 1px 1px 0px;
     transition: var(--transition);
 }
 
+[data-theme="dark"] .card {
+    box-shadow: rgba(255, 255, 255, 0.12) 0px 0px 0px 1px, rgba(0, 0, 0, 0.5) 0px 1px 4px 0px;
+}
+
 .card:hover {
-    border-color: var(--primary-color);
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+    box-shadow: rgba(95, 99, 106, 0.12) 0px 0px 0px 1px, rgba(43, 43, 48, 0.1) 0px 4px 12px 0px;
+}
+
+[data-theme="dark"] .card:hover {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0.6) 0px 4px 12px 0px;
 }
 
 /* Bento Box Grids */
