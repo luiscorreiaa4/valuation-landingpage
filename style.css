@@ -381,30 +381,22 @@ section {
 
 /* Bento Box Grids */
 .bento-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-}
-
-.bento-large {
-    grid-column: span 2;
-}
-
-.bento-services {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 1.5rem;
-}
-
-.service-item {
-    grid-column: span 5;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.service-wide {
-    grid-column: span 7;
+
+.bento-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 /* Hero Section */
@@ -447,9 +439,10 @@ section {
 .layer-bg {
     width: 70%;
     aspect-ratio: 1;
-    background-color: var(--bg-alt);
+    background-color: var(--bg-card);
     transform: rotate(-4deg) translateX(-10%);
     z-index: 1;
+    border: 1px solid var(--border-color);
 }
 
 .layer-fg {
@@ -466,7 +459,6 @@ section {
     width: 80%;
     aspect-ratio: 3/4;
     background-color: var(--bg-card);
-    transform: rotate(3deg);
     font-size: 8rem;
     box-shadow: var(--shadow-diffuse);
     border: 1px solid var(--border-color);
