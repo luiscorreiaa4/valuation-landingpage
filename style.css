@@ -306,7 +306,7 @@ p {
     cursor: pointer;
     border: 1px solid transparent;
     text-decoration: none;
-    border-radius: var(--radius-full);
+    border-radius: 8px;
     transition:
         transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
         background-color 0.25s ease,
@@ -501,7 +501,7 @@ p {
     font-size: 1.125rem;
     font-weight: 600;
     color: var(--text-main);
-    border-radius: var(--radius-pill);
+    border-radius: 8px;
 }
 
 .nav-menu a:not(.btn):hover {
@@ -1081,7 +1081,7 @@ section {
     place-items: center;
     width: 48px;
     height: 48px;
-    border-radius: var(--radius-icon);
+    border-radius: 8px;
     background-color: var(--bg-card);
     color: var(--text-main);
     font-size: 1.25rem;
@@ -1135,7 +1135,7 @@ section {
     height: 60px;
     background-color: #25d366;
     color: #ffffff;
-    border-radius: 18px;
+    border-radius: 8px;
     font-size: 1.9rem;
     box-shadow: var(--shadow-hover);
     z-index: 100;
