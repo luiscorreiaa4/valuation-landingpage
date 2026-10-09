@@ -17,7 +17,7 @@ function initTheme() {
     // Check saved theme or system preference
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme) {
         html.setAttribute('data-theme', savedTheme);
         updateThemeIcon(savedTheme, icon);
@@ -30,7 +30,7 @@ function initTheme() {
     themeToggleBtn.addEventListener('click', () => {
         const currentTheme = html.getAttribute('data-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
+
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme, icon);
@@ -55,7 +55,7 @@ function initMobileMenu() {
         const isExpanded = mobileBtn.getAttribute('aria-expanded') === 'true';
         mobileBtn.setAttribute('aria-expanded', !isExpanded);
         navMenu.classList.toggle('active');
-        
+
         // Change icon
         const icon = mobileBtn.querySelector('i');
         if (navMenu.classList.contains('active')) {
@@ -101,7 +101,7 @@ function initModal() {
             document.body.style.overflow = '';
         }
     });
-    
+
     // Close on escape key
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.classList.contains('active')) {
@@ -114,7 +114,7 @@ function initModal() {
 // FAQ Accordion Toggle - Ensure only one opens at a time (Optional logic)
 function initFAQ() {
     const details = document.querySelectorAll('.faq-item');
-    
+
     details.forEach(targetDetail => {
         targetDetail.addEventListener('click', () => {
             details.forEach(detail => {
