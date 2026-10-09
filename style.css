@@ -217,7 +217,11 @@ h4 {
     line-height: 1.15;
 }
 
-h1,
+h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+}
+
 h2 {
     font-family: var(--font-display);
     font-weight: 700;
@@ -247,7 +251,7 @@ h1 i,
 h2 i,
 h3 i {
     font-style: italic;
-    font-weight: inherit;
+    font-weight: 800;
     color: var(--secondary-color);
 }
 
